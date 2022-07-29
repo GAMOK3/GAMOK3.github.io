@@ -1,0 +1,283 @@
+/* CSS Document */
+header a{
+	text-decoration: none;
+	text-decoration-color: none;
+}
+header .nav a:link{
+	color: white;
+}
+header .nav a:visited{
+	color: white;
+}
+.nav a{
+	text-decoration: none;
+	padding: 0 12px;
+	transition-duration: 1s;
+	color: white;
+	font-size: 1em;
+}
+.nav a:hover{
+	padding: 0 24px;
+	color: #E595B5 !important;
+	text-shadow: 0 0 20px #E595B5;
+}
+main h2{
+	color: aliceblue;
+}
+main{
+	color: #B5ACA9;
+	background-color: white;
+}
+.section-1{
+	background-color: black;
+	text-align: center;
+}
+#banner img{
+	padding-top: 20px;
+	height: 50%;
+}
+#banner{
+	background: #000000;
+	height: 100vh;
+}
+#banner span{
+		color: #E595B5;
+	font-family: CALATHEA;
+	font-weight: 500;
+	text-shadow: 0 0 5px #E595B5;
+}
+#banner h2{
+	font-size: 3em;
+}
+#banner a{
+	padding: 10px;
+	color: aliceblue;
+	background-color: #E595B5;
+	font-family: 'Montserrat', sans-serif;
+}
+.section-2{
+	color: black;
+	padding: 100px 50px;
+}
+.section-2 h2{
+	color: #E595B5;
+	font-family: CALATHEA;
+	font-weight: 500;
+	text-shadow: 0 0 5px #E595B5;
+	font-size: 3em;
+}
+.card{
+	width: 30%;
+	padding: 12px;
+}
+.card span{
+	font-family: 'Montserrat', sans-serif;
+}
+.box img{
+	width: 80%;
+}
+.footer{
+	padding: 16px;
+	background-color: black;
+}
+.gird-1{
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-template-rows: 50% 50%;
+	grid-gap: 24px;
+	height: 100vh;
+}
+.img-1, .img-2, .img-3{
+	background-size: cover;
+	background-repeat: no-repeat;
+	object-fit: fill;
+	background-position: center;
+}
+.img-1{
+	grid-row: 1/3;
+	background-image: url("../img/hain7532.jpg");
+}
+.img-2{
+	background-image: url("../img/hain7871.jpg");
+}
+.img-3{
+	background-image: url("../img/hain7580.jpg");
+	position: relative;
+}
+.contentchia{
+	height: 0;
+	background: rgba(0, 0, 0, 0.5);
+	font-weight: 400;
+	font-size: 3em;
+	line-height: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: aliceblue;
+	transition-duration: 1s;
+	overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
+}
+.content-3{
+	text-align: center;
+	padding-bottom: 50px;
+	
+}
+.content-3 h1{
+	color: #E595B5;
+	font-family: CALATHEA;
+	font-weight: 500;
+	text-shadow: 0 0 5px #E595B5;
+	font-size: 4em;
+}
+.content-3 p{
+	font-size: 2em;
+}
+.img-3:hover .contentchia{
+	height: 100%;
+}
+.gallery{
+	display: grid;
+	grid-gap: 24px;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto auto;
+	overflow: hidden;
+}
+.a1{
+	background-size: cover;
+	background-repeat: no-repeat;
+	object-fit: fill;
+	background-position: center;
+}
+.a1{
+	background-image: url("../img/vlcsnap-2022-06-21-18h25m06s550.jpg")
+}
+.so1{
+	grid-column: 1/3;
+}
+.so3{
+	grid-row: 2/4;
+}
+.so6{
+	grid-column: 3/5;
+}
+#main{
+	display: flex;
+}
+#sec-5{
+	display: flex;
+	width: 100%;
+}
+.sec-5{
+	width: 50%;
+	position: relative;
+	padding: 50px 0;
+	justify-content: center;
+	align-items: center;
+}
+.text-5, .feature-5{
+	border-radius: 5%;
+} 
+.text-5{
+	width: 50%;
+	background-color: aliceblue;
+	z-index: 99;
+	margin-right: -100px;
+	padding: 24px;
+
+}
+.hinhcuoi{
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+	justify-content: flex-end;
+}
+.hinhcuoi img{
+  transform: scale3d(1.6, 1, 2) rotateX(0deg) rotateY(25deg) rotateZ(0deg) translate3d(-22px, 0px, 0px) skew(0deg, 0deg);
+	justify-content: flex-end;
+}
+.text-5 h1{
+	text-align: right;
+	font-size: 10em;
+	line-height: 1em;
+}
+.text-5 b{
+	font-style: bold;
+}
+.text-5 p{
+		padding-bottom: 1em;
+}
+.feature-5{
+	width: 50%;
+	overflow: hidden;
+}
+.feature-5 img{
+	width: 100%;
+}
+.f40{
+	width: 40%;
+}
+.f60{
+	width: 60%;
+	line-height: 2em;
+}
+.sec-6 img{
+	width: 40%;
+	justify-content: flex-end;
+}
+.sec-6{
+	width: 100%;
+	padding: 50px 0 100px 0;
+}
+.feature-6{
+	width: 50%;
+}
+.content-6{
+	width: 50%;
+}
+.content-6 h3{
+	font-size: 2em;
+	color: #E595B5;
+}
+.content-6 p{
+	padding: 24px 0;
+}
+.content-6 a{
+	color: aliceblue;
+}
+.button{
+	padding: 12px;
+	background-color: #E595B5;
+}
+footer{
+	background-color: black;
+	color: aliceblue;
+	padding: 50px;
+	justify-content: space-between;
+}
+footer ul{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	line-height: 2em;
+}
+ion-icon{
+	font-size: 2em;
+}
+.padcen{
+	padding: 0 12px;
+}
+.search > .row{
+	padding: 12px 0;
+}
+@media screen and (max-width:414px){
+	footer{
+		font-size: 1em;
+		flex-direction: column;
+		line-height: 2em;
+	}
+	.f40{
+		flex-direction: column;
+		align-self: auto;
+		justify-content: auto;
+	}
+}

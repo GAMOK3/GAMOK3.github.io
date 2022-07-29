@@ -1,0 +1,188 @@
+/* CSS Document */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Header*/
+.header{
+	height: 10vh;
+	width: 100vw;
+	font-family: 'Montserrat', sans-serif;
+}
+.header a{
+	padding: 0 0 0 44px;
+}
+.header a:link{
+	font-size: 2em;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.header a:visited{
+	font-size: 2em;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+html, body {
+	overflow-x: hidden;
+	 scroll-behavior: smooth;
+}
+
+p {
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+section {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header{
+	  position: fixed;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+	z-index: 800;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	background-color: black;
+}
+.header a{
+}
+.header a:link{
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 3em;
+}
+.header a:visited{
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: left;
+	font-size: 3em;
+}
+.fa-bars{
+	align-items: center!important;
+	padding: 22px 44px 22px 0!important;
+}
+.fa-times{
+	padding: 22px 44px 22px 0!important;
+}
+.about {
+  background-color: white;
+	color: black;
+}
+
+.home {
+margin-top: 10vh;
+  background-color: pink;
+	color: white;
+}
+
+.portfolio {
+	color: black;
+  background-color: white;
+}
+
+.contact {
+  background-color: black;
+	color: white;
+}
+
+i {
+  font-size: 3em;
+  color: white;
+  padding: 1em;
+}
+navigation ul{
+	padding: 25% 5%;
+	width: 100vw;
+}
+navigation a{
+	width: 100vw;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 6.5em;
+  color: white;
+  text-align: left;
+	opacity: .6;
+	line-height: 1.5em;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -moz-transition: opacity 0.8s ease-in-out;
+    -ms-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+    transition: opacity .8s ease-in-out;
+	transition: 0.8s ease;
+}
+navigation span{
+	padding-right: 2.5%;
+	font-size: 32px;
+}
+.feature-menu{
+	width: 50vw;
+	height: 80vh;
+	align-self: flex-end;
+	  position: fixed;
+  right: -85vh;
+  bottom: 75vh;
+  cursor: pointer;
+	transform: rotate(-25deg);
+}
+navigation img{
+	min-height: 110vh;
+	opacity: .075;
+}
+navigation a:hover {
+	font-weight: 300;
+  opacity: 1;
+  text-decoration: none;
+  font-size: 6.5em;
+  color: white;
+  letter-spacing: 0.2rem;
+  text-align: left;
+	line-height: 1.5em;
+}
+
+navigation ul {
+
+  list-style: none;
+  line-height: 5rem;
+  text-align: left;
+}
+
+navigation {
+  background: rgba(0,0,0,1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: top right;
+  z-index: 998;
+}
+
+.menu-close {
+  transform: scale(0.01);
+  opacity: 0;
+}
+
+div.toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
+
