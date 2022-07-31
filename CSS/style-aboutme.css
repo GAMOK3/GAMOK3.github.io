@@ -135,8 +135,9 @@
 }
 /*
 CodePen Home
-[CSS] Infinite autoplay carousel*/ :root {
-  --angle: 4deg;
+[CSS] Infinite autoplay carousel*/
+:root {
+  --angle: 2.5deg;
 }
 .word-container {
   display: flex;
@@ -152,22 +153,22 @@ CodePen Home
   top: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Montserrat', sans-serif;
-  font-size: 8em;
+  font-size: 11.74vh;
   font-weight: 900;
   color: var(--color, #fff);
   display: flex;
   pointer-events: none;
   user-select: none;
-  line-height: 5.8rem;
+  line-height: 5.32vh;
 }
 .word .char {
   position: relative;
-  -webkit-text-stroke: 1.5px #000;
+  -webkit-text-stroke: 0.15vh #000;
   transform: translateY(-45%) rotate(var(--angle));
   animation: up-and-down 2s ease infinite;
   animation-delay: calc((var(--word-index) * -0.15s) + (var(--char-index) * 0.1s));
   z-index: calc(-1 * var(--char-index));
-  margin-left: -1.6rem;
+  margin-left: -0.15vh;
 }
 @keyframes up-and-down {
   0%, 100% {

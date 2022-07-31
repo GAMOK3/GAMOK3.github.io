@@ -17,10 +17,10 @@ body {
 ** Apply styles to the parent element
 */
 .Words {
-  margin: 25% 0 0 5%;
-  font-size: 55px;
+  margin: 25vh 0 0 5vw;
+  font-size: 4.5vh;
   font-weight: 600;
-  letter-spacing: -2px;
+  letter-spacing: -0.18vh;
   text-transform: uppercase;
   transform: translate3d(0, 0, 0);
   -webkit-font-smoothing: antialiased;
@@ -29,13 +29,13 @@ body {
 }
 .normal{
 	text-transform: none!important;
-	  font-size: 33px!important;
+	  font-size: 3vh!important;
 }
 /*
 ** Apply common styles to each line of text
 */
 .Words-line {
-  height: 55px;
+  height: 4.5vh;
   overflow: hidden;
   position: relative;
 }
@@ -46,35 +46,35 @@ body {
   transform: skew(0deg, -30deg) scaleY(1.33333);
 }
 .Words-line:nth-child(1) {
-  left: 29px;
+  left: 2.66vh;
 }
 .Words-line:nth-child(2) {
-  left: 58px;
+  left: 5.32vh;
 }
 .Words-line:nth-child(3) {
-  left: 87px;
+  left: 7.98vh;
 }
 .Words-line:nth-child(4) {
-  left: 116px;
+  left: 10.64vh;
 }
 .Words-line:nth-child(5) {
-  left: 145px;
+  left: 13.30vh;
 }
 .Words-line:nth-child(6) {
-  left: 174px;
+  left: 15.96vh;
 }
 .Words-line:nth-child(7) {
-  left: 203px;
+  left: 18.62vh;
 }
 .Words-line:nth-child(8) {
-  left: 232px;
+  left: 21.38vh;
 }
 /*
 ** Fine-grained text styles
 */
 p {
-  height: 55px;
-  line-height: 53px;
+  height: 4.5vh;
+  line-height: 4.35vh;
 
   transition: all 0.4s ease-in-out;
   transform: translate3d(0, 0, 0);
@@ -86,5 +86,5 @@ p {
 ** The hover interaction
 */
 .Words:hover p {
-  transform: translate3d(0, -55px, 0);
+  transform: translate3d(0, -4.5vh, 0);
 }
