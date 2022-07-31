@@ -1,0 +1,42 @@
+:root {
+  --angle: 4deg;
+}
+.word-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+}
+.word {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8em;
+  font-weight: 900;
+  color: var(--color, #fff);
+  display: flex;
+  pointer-events: none;
+  user-select: none;
+  line-height: 5.8rem;
+}
+.word .char {
+  position: relative;
+  -webkit-text-stroke: 1.5px #000;
+  transform: translateY(-45%) rotate(var(--angle));
+  animation: up-and-down 2s ease infinite;
+  animation-delay: calc((var(--word-index) * -0.15s) + (var(--char-index) * 0.1s));
+  z-index: calc(-1 * var(--char-index));
+  margin-left: -1.6rem;
+}
+@keyframes up-and-down {
+  0%, 100% {
+    transform: translateY(-45%) rotate(var(--angle));
+  }
+  50% {
+    transform: translateY(45%) rotate(var(--angle));
+  }
+}

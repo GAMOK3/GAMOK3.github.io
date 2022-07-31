@@ -1,0 +1,133 @@
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Header*/
+.header {
+  font-family: 'Montserrat', sans-serif;
+  mix-blend-mode: difference;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: auto;
+  z-index: 800;
+  font-weight: 600;
+}
+.header a {
+  padding: 44px 0 0 44px;
+}
+.header a:link {
+  font-size: 3em;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header a:visited {
+  font-size: 3em;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.fa-bars {
+  padding: 44px 44px 0 0;
+  display: flex;
+  align-self: center;
+}
+.fa-times {
+  padding: 44px 44px 0 0;
+  mix-blend-mode: difference;
+  display: flex;
+  align-self: center;
+}
+i {
+  font-size: 45px;
+  color: white;
+}
+navigation ul {
+  padding: 25% 5%;
+  width: 100vw;
+}
+navigation a {
+  width: 100vw;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 6.5em;
+  color: white;
+  text-align: left;
+  opacity: .6;
+  line-height: 1.5em;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  -moz-transition: opacity 0.8s ease-in-out;
+  -ms-transition: opacity 0.8s ease-in-out;
+  -o-transition: opacity 0.8s ease-in-out;
+  transition: opacity .8s ease-in-out;
+  transition: 0.8s ease;
+}
+navigation span {
+  padding-right: 2.5%;
+  font-size: 32px;
+}
+.feature-menu {
+  width: 50vw;
+  height: 80vh;
+  align-self: flex-end;
+  position: fixed;
+  right: -85vh;
+  bottom: 75vh;
+  transform: rotate(-25deg);
+}
+navigation img {
+  min-height: 110vh;
+  opacity: .075;
+}
+navigation a:hover {
+  font-weight: 300;
+  opacity: 1;
+  text-decoration: none;
+  font-size: 6.5em;
+  color: white;
+  letter-spacing: 0.2rem;
+  text-align: left;
+  line-height: 1.5em;
+}
+navigation ul {
+  list-style: none;
+  line-height: 5rem;
+  text-align: left;
+}
+navigation {
+  background: black !important;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  transition-duration: 0.345s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: right center;
+  z-index: 998;
+}
+.menu-close {
+  transform: scale(0.01);
+  opacity: 0;
+}
+div.toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  mix-blend-mode: difference;
+}
