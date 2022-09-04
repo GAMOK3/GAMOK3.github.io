@@ -8,6 +8,7 @@
   position: relative;
   width: 100vw;
   min-height: 100vh;
+	mix-blend-mode: difference;
 }
 .word {
   position: absolute;
@@ -17,7 +18,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 11.74vh;
   font-weight: 900;
-  color: var(--color, #fff);
+  color: var(--color, #F2F2F2);
   display: flex;
   pointer-events: none;
   user-select: none;
@@ -25,11 +26,11 @@
 }
 .word .char {
   position: relative;
-  -webkit-text-stroke: 0.15vh #000;
+  -webkit-text-stroke: 0.15vh #0D0D0D;
   transform: translateY(-45%) rotate(var(--angle));
   animation: up-and-down 2s ease infinite;
   animation-delay: calc((var(--word-index) * -0.15s) + (var(--char-index) * 0.1s));
-  z-index: calc(-1 * var(--char-index));
+  z-index: calc(-10000000000000 * var(--char-index));
   margin-left: -0.15vh;
 }
 @keyframes up-and-down {

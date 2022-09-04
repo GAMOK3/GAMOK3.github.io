@@ -16,7 +16,14 @@ body {
 /*
 ** Apply styles to the parent element
 */
+main{
+	background: #F2F2F2;
+	position: fixed;
+	z-index: -9281093;
+	width: 100vw;
+}
 .Words {
+	color: #0D0D0D;
   margin: 25vh 0 0 5vw;
   font-size: 4.5vh;
   font-weight: 600;
@@ -87,4 +94,52 @@ p {
 */
 .Words:hover p {
   transform: translate3d(0, -4.5vh, 0);
+}
+
+/*new*/
+.crilcetext{
+  display: flex;
+  min-height: 100vh;
+	min-width: 100vw;
+  align-items: center;
+  justify-content: flex-end;
+	position: absolute;
+	right: 0%;
+	color: #0d0d0d;
+}
+.crilcetext p {
+	font-size: 5vh;
+  text-transform: uppercase;
+	font-weight: 400;
+}
+.small, .medium{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.small {
+  -webkit-animation: linear 15s rotate infinite;
+          animation: linear 15s rotate infinite;
+}
+
+.medium {
+  animation: linear 30s rotate reverse infinite;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }

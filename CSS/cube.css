@@ -8,6 +8,10 @@ cube {
   bottom: 10px;
 	transform: scale(0.25);
 	perspective: 1000px;
+	transition-duration: 0.5s;
+}
+cube:hover{
+	transform: scale(0.5);
 }
 cube .scene,
 cube .scene * {

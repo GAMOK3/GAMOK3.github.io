@@ -8,6 +8,12 @@ toggler.addEventListener('click', (e) => {
   navigation.classList.toggle('menu-close') 
 })
 
+
+
+//cursor
+
+
+
 document.onmousemove = function(e) {
   document.body.style.setProperty("--x", e.clientX + "px");
   document.body.style.setProperty("--y", e.clientY + "px");
@@ -25,3 +31,14 @@ clickableElements.forEach(elm => {
 });
 
 //click effect
+
+// hover effect
+const hoverableElements = document.querySelectorAll(".hoverable");
+hoverableElements.forEach(elm => {
+  elm.addEventListener("mouseover", function() {
+    document.body.classList.add("hovered");
+  });
+  elm.addEventListener("mouseleave", function() {
+    document.body.classList.remove("hovered");
+  });
+});
