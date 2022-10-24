@@ -1,3 +1,7 @@
+main{
+	background: #F2F2F2;
+	position: relative;
+}
 :root {
   --angle: 2.5deg;
 }
@@ -8,7 +12,6 @@
   position: relative;
   width: 100vw;
   min-height: 100vh;
-	mix-blend-mode: difference;
 }
 .word {
   position: absolute;

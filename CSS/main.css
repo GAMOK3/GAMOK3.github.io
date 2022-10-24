@@ -1,14 +1,15 @@
 /* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
+font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-font-family: 'Montserrat', sans-serif;
 }
 /*Header*/
 header>a {
 	position: fixed;
-  z-index: 10;
+  z-index: 9000;
 	height: 60px;
 	mix-blend-mode: difference;
 	padding: 44px;
@@ -56,18 +57,17 @@ i {
   color: #F2F2F2;
 }
 navigation ul {
-  padding: 5% 5%;
+  margin: 35% 0% 3% 3%;
   width: 100vw;
 }
 navigation a {
   width: 100vw;
   text-decoration: none;
   font-weight: 300;
-  font-size: 11vh;
+  font-size: 10vh;
   color: #0D0D0D;
   text-align: left;
-  opacity: .6;
-  line-height: 11vh;
+  line-height: 5vh;
   -webkit-transition: opacity 0.8s ease-in-out;
   -moz-transition: opacity 0.8s ease-in-out;
   -ms-transition: opacity 0.8s ease-in-out;
@@ -76,18 +76,18 @@ navigation a {
   transition: 0.8s ease;
 }
 navigation span {
-  padding-right: 2.5%;
-  font-size: 32px;
+  padding-right: 1.5%;
+  font-size: 3vh;
+	font-weight: 600;
 }
 navigation a:hover {
   font-weight: 300;
-  opacity: 1;
   text-decoration: none;
-  font-size: 11vh;
-  color: #0D0D0D;
-  letter-spacing: 1vw;
+  font-size: 10vh;
+  color: #021e73;
+  letter-spacing: 0.05vw;
   text-align: left;
-  line-height: 11vh;
+  line-height: 5vh;
 }
 navigation ul {
   list-style: none;
@@ -106,7 +106,7 @@ navigation {
   transition-duration: 0.345s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: right center;
-  z-index: 9;
+  z-index: 8888;
 }
 .menu-close {
   transform: scale(0.01);
@@ -116,6 +116,6 @@ div.toggle {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 12;
+  z-index: 9000;
   mix-blend-mode: difference;
 }

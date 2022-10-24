@@ -10,22 +10,20 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 16px;
 }
 body::after {
   content: "";
   position: fixed;
-  z-index: 11;
+  z-index: 9999;
   top: var(--y);
   left: var(--x);
   right: 0;
   bottom: 0;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1em;
+  height: 1em;
   border-radius: 30%;
-
-  background: #F2F2F2;
-  mix-blend-mode: difference;
+  background: #021e73;
   pointer-events: none;
   transition: width 0.4s ease-in-out;
   transition: height 0.4s ease-in-out;
@@ -40,19 +38,20 @@ body.img-hovered::after {
   height: 6em;
   content: "CLICK";
   text-align: center;
-  color: #0D0D0D;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: SaviorSans;
   font-weight: 700;
   animation: spin 4s infinite forwards cubic-bezier(1, 1, 1, 1);
+	mix-blend-mode: difference;
 }
 body.hovered::after {
 	transform: scale(3);
   content: "";
   text-align: center;
-  color: #0D0D0D;
+	mix-blend-mode: difference;
+	border-radius: 7.5%;
 }
 
 .title {
