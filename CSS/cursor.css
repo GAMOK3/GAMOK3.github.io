@@ -1,0 +1,101 @@
+/* CSS Document */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  cursor: none;
+}
+
+html {
+  font-size: 16px;
+}
+body::after {
+  content: "";
+  position: fixed;
+  z-index: 9999;
+  top: var(--y);
+  left: var(--x);
+  right: 0;
+  bottom: 0;
+  width: 1em;
+  height: 1em;
+  border-radius: 30%;
+  background: #021e73;
+  pointer-events: none;
+  transition: width 0.4s ease-in-out;
+  transition: height 0.4s ease-in-out;
+  font-size: 1.5em;
+-ms-transform:matrix(0.71,0.71,-0.71,0.71,0,0);
+-webkit-transform:matrix(0.71,0.71,-0.71,0.71,0,0);
+transform:matrix(0.71,0.71,-0.71,0.71,0,0);
+}
+
+body.img-hovered::after {
+  width: 6em;
+  height: 6em;
+  content: "CLICK";
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: SaviorSans;
+  font-weight: 700;
+  animation: spin 4s infinite forwards cubic-bezier(1, 1, 1, 1);
+	mix-blend-mode: difference;
+}
+body.hovered::after {
+	transform: scale(3);
+  content: "";
+  text-align: center;
+	mix-blend-mode: difference;
+	border-radius: 7.5%;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.hero {
+  position: relative;
+  margin-top: 5em;
+}
+.hero__text {
+  font-size: 3rem;
+  color: #0D0D0D;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+.hero__imgContainer {
+  width: 700px;
+  height: 600px;
+  position: absolute;
+  left: 45%;
+  top: 0;
+  z-index: 0;
+}
+.hero__imgContainer img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: brightness(100%);
+  transition: all 0.4s ease;
+}
+.hero__imgContainer img:hover {
+  filter: brightness(150%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
