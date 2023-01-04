@@ -1,0 +1,111 @@
+*, :after, :before {
+  box-sizing: border-box
+}
+:root {
+  font-size: 18px
+}
+main {
+  --color-text: #111;
+  --color-bg: #d8d2cd;
+  --color-link: #b41717;
+  --color-link-hover: #000;
+  --color-bg-alt: #c3bcbc;
+  --color-text-alt: #111;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  overflow-x: hidden
+}
+.demo-7 {
+  --color-text: #b4176e;
+  --color-text-alt: #000;
+  --color-bg: white;
+  --color-bg-alt: #988797;
+  --color-link-hover: #b4176e;
+  --color-link: #4c34eb
+}
+.js .loading:before, .js .loading:after {
+  content: "";
+  z-index: 1000;
+  position: fixed
+}
+.js .loading:before {
+  width: 0%;
+  height: 0%;
+  background: var(--color-bg);
+  top: 0;
+  left: 0
+}
+.js .loading:after {
+  width: 0;
+  height: 0;
+  opacity: .4;
+  background: var(--color-link);
+  border-radius: 50%;
+  margin: -30px 0 0 -30px;
+  animation: loaderAnim .7s linear infinite alternate forwards;
+  top: 50%;
+  left: 50%
+}
+@keyframes loaderAnim {
+  to {
+    opacity: 1;
+    transform: scale(.5)
+  }
+}
+.grid-2 {
+  width: 100%;
+  grid-template-columns: repeat(8, 1fr);
+  display: grid;
+  position: relative
+}
+.grid__item {
+  will-change: transform;
+  grid-column: var(--c);
+  grid-row: var(--r);
+  position: relative
+}
+.grid__item-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  will-change: transform, opacity;
+  background-position: 50%;
+  background-size: contain;
+	background-repeat: no-repeat;
+  position: relative
+}
+.grid__item-img-2 {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  will-change: transform, opacity;
+  background-position: 50%;
+  background-size: contain;
+	background-repeat: no-repeat;
+  position: relative
+}
+/*
+.grid__item-img {
+  filter: contrast(70%)
+}
+*/
+.footer {
+  color: var(--color-text-alt);
+  background: var(--color-bg-alt);
+  height: 100vh;
+  z-index: 200;
+  text-transform: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  line-height: 1.2;
+  display: flex;
+  position: relative
+}
+.footer p {
+  max-width: 40ch
+}
