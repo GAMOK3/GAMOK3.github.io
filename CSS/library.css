@@ -13,10 +13,6 @@ body {
 body::-webkit-scrollbar {
   width: 1em;
 }
-body {
-  scrollbar-width: thin;
-  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-}
 body::-webkit-scrollbar-track {
   background: var(--scrollbarBG);
 }
@@ -67,7 +63,6 @@ h3 {
   width: 100%;
   padding: 0 16;
 }
-.container-full {}
 /* button */
 .simple-link {
   color: #299EF3;

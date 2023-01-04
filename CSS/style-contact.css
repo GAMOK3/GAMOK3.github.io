@@ -58,17 +58,30 @@
   z-index: 800;
   font-weight: 600;
 }
-.labelaa:after{
+.labelamail:after{
     content:'email';
 	transition-duration: .5s;
 }
-.labelaa:hover:after{
+.labelamail:hover:after{
     content:'gamoke1401@gmail.com';
 	transition-duration: .5s;
 }
-
-
-
+.labelabehance:after{
+  content:'behance';
+transition-duration: .5s;
+}
+.labelabehance:hover:after{
+  content:'/gamoke';
+transition-duration: .5s;
+}
+.labelafb:after{
+  content:'facebook';
+transition-duration: .5s;
+}
+.labelafb:hover:after{
+  content:'/nguyenminhloc.1401';
+transition-duration: .5s;
+}
 
 
 

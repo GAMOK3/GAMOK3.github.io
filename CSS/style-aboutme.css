@@ -158,8 +158,10 @@ CodePen Home
   color: var(--color, #fff);
   display: flex;
   pointer-events: none;
-  user-select: none;
   line-height: 5.32vh;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
 }
 .word .char {
   position: relative;
